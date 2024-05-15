@@ -1,0 +1,32 @@
+000100230313     A                                      REF(CSCSTP)
+000101230313     A          R HEADING
+000102230313     A            DATE            L        5DATE(*JOB)
+000103230313     A                                      DATFMT(*JOB)
+000104230313     A                                    35'Fun With Modular Programming'
+000105230313     A                                    70'Page'
+000106230313     A                                    77PAGNBR EDTCDE(Z)
+000107230313     A                                      SPACEA(1)
+000108230313     A          R DETAIL
+000109230313     A                                     5'Customer:'
+000110230313     A                                      SPACEB(1)
+000111230313     A            CUSTNO    R    6S       27
+000112230313     A                                     5'User ID:'
+000113230313     A                                      SPACEB(2)
+000114230313     A            FULLUID       33        27
+000115230313     A                                     5'Password:'
+000116230313     A                                      SPACEB(2)
+000117230313     A            PWRD           9        27
+000127230313     A                                     5'Last Four of Phone:'
+000128230313     A                                      SPACEB(2)
+000129230313     A            PHN            4  0     27
+000130230313     A                                     5'Send Email Reminder:'
+000131230313     A                                      SPACEB(2)
+000132230317     A            FUTRDAT        8S 0     27EDTWRD('  /  /    ')
+000134230317     A
+000135230317     A*%%RS+<record-sequences>
+000136230317     A*%%RS+ <sequence name="Untitled">
+000137230317     A*%%RS+  <device type="printer" width="132" height="66" />
+000138230317     A*%%RS+  <record-write record-format="HEADING" />
+000139230317     A*%%RS+  <record-write record-format="DETAIL" />
+000140230317     A*%%RS+ </sequence>
+000141230317     A*%%RS </record-sequences>
